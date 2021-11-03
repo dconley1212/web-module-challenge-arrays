@@ -175,12 +175,19 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 // 2 parameters - array/string 
-function filterByWord(/*your code here*/){
+function filterByWord(array, string){
   /*your code here*/
   //create a new array to push results to
+  const filteredArray = []
   // loop through the provided array and check every index
+  for( let i = 0; i < array.length; i++) {
+    if (array[i].includes(string)){
+      filteredArray.push(array[i]);
+    }
+  }
   // if the index includes the string
   // outside the loop return the array
+  return filteredArray;
 }
 
 
