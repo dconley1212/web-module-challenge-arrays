@@ -45,10 +45,11 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
+function copy(array){
+  return [...array]
   /*your code here*/
 }    
-
+console.log(copy(originalFlavors));
 
 
 
@@ -64,7 +65,7 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
+function is31Flavors(array){
  /*your code here*/
 }
 
@@ -138,7 +139,7 @@ function removeFlavorByName(/*your code here*/){
   /*your code here*/
 }
 
-
+// loop through the array and check every index for the exact match of the string, if it exists then remove it using splice 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
@@ -159,9 +160,13 @@ Use the filterByWord function below to do the following:
 
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
-
+// 2 parameters - array/string 
 function filterByWord(/*your code here*/){
   /*your code here*/
+  //create a new array to push results to
+  // loop through the provided array and check every index
+  // if the index includes the string
+  // outside the loop return the array
 }
 
 
@@ -194,6 +199,7 @@ Use the getRandomFlavors function and new arrays below to do the following:
   For example: getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].
 */
 
+//uncomment the data and move it above the function
 
 function getRandomFlavors(/*code here*/){
   /*code here*/
