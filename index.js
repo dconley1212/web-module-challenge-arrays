@@ -108,9 +108,8 @@ Use the removeLastFlavor function below to do the following:
 */
 
 function removeLastFlavor(array){
- /*your code here*/
- array.pop()
- return array;
+  array.pop()
+  return array;
 }
 
 
@@ -127,8 +126,7 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 function getFlavorByIndex(array, number){
-  /*your code here*/
-return array[number]
+return array[number];
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -146,8 +144,13 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
+function removeFlavorByName(array, string){
   /*your code here*/
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === string){ array.splice(i,1);
+    }
+  }
+  return array;
 }
 
 // loop through the array and check every index for the exact match of the string, if it exists then remove it using splice 
